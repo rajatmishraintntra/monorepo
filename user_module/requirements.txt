@@ -3,5 +3,5 @@ pinject==0.14.1
 python-dotenv==0.19.2
 PyJWT==2.3.0
 wheel==0.37.0
-bcrypt==
+bcrypt==3.2.0
 
