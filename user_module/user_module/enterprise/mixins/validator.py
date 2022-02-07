@@ -1,0 +1,2 @@
+class UniqueValidator:
+    pass
