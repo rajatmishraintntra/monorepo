@@ -16,7 +16,8 @@ class AbstractUserService(abc.ABC):
     def create(self, data: object) -> object:
         usr = self.query.execute(self.QueryBuilder.create_user(data))
         _id = int(*[x.id for x in usr])
-        self.query.execute(self.QueryBuilder.create_permissions(_id, data))
+        if data.permissions!=[]:
+            self.query.execute(self.QueryBuilder.create_permissions(_id, data))
         return dict(id=_id)
 
     @abc.abstractmethod
