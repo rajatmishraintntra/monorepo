@@ -1,5 +1,5 @@
-from typing import List
 from abc import ABC
+from typing import List
 
 
 class AbstractUser(ABC):

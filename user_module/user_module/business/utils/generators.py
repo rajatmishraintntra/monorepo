@@ -1,17 +1,17 @@
-import jwt
 import os
+
 import bcrypt
-import json
+import jwt
 
 
 def generate_token(payload: dict):
-    secret = os.getenv("secret_key")
-    return jwt.encode(payload, secret, algorithm="HS256")
+    secret_key = os.getenv("SECRET_KEY")
+    return jwt.encode(payload, secret_key, algorithm="HS256")
 
 
 def decode_token(token: str):
-    secret = os.getenv("secret_key")
-    return jwt.decode(token, secret, algorithms=["HS256"])
+    secret_key = os.getenv("SECRET_KEY")
+    return jwt.decode(token, secret_key, algorithms=["HS256"])
 
 
 def generate_password_hash(password):

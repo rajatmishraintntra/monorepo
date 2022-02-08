@@ -1,6 +1,3 @@
-from typing import Dict
-
-
 class Sict(object):
     def __init__(self, dicth) -> None:
         for key, value in dicth.items():

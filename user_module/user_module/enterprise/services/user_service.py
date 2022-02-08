@@ -1,8 +1,8 @@
-from user_module.business.services.user_service import AbstractUserService
-from user_module.enterprise.dtos.User import UserDTO
 from typing import List
+
+from user_module.business.services.user_service import AbstractUserService
 from user_module.business.utils.generators import *
-from user_module.business.utils.custom import CustomDict
+from user_module.enterprise.dtos.User import UserDTO
 
 
 class UserService(AbstractUserService):

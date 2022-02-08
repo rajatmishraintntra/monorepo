@@ -1,6 +1,6 @@
 from pypika import Table, PostgreSQLQuery
-from user_module.common.constants import DependenciesConstant as DC
 from user_module.business.utils.generators import generate_password_hash
+from user_module.common.constants import DependenciesConstant as DC
 
 
 class UserQueries:
@@ -18,8 +18,8 @@ class UserQueries:
         password = generate_password_hash(data.password.encode("utf-8"))
         q = (
             self.Query.into(table)
-            .columns("email", "password", "role_id")
-            .insert(data.email, password.decode("utf-8"), data.role)
+                .columns("email", "password", "role_id")
+                .insert(data.email, password.decode("utf-8"), data.role)
         )
 
         return q.get_sql() + "RETURNING id"
@@ -27,8 +27,8 @@ class UserQueries:
     def create_permissions(self, _id, data: object):
         q2 = (
             self.Query.into(self.Table(self.db_user_permission_intermediate))
-            .columns("user_id", "permissions_id")
-            .insert(*[(_id, i) for i in data.permissions])
+                .columns("user_id", "permissions_id")
+                .insert(*[(_id, i) for i in data.permissions])
         )
         return q2.get_sql() + "RETURNING id"
 

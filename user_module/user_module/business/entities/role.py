@@ -1,5 +1,5 @@
-from typing import List
 import abc
+from typing import List
 
 
 class AbstractRole(abc.ABC):
@@ -14,7 +14,7 @@ class AbstractRole(abc.ABC):
     default_permissions: List[object]
 
     def __init__(
-        self, role_name: str, default_permissions: List[object], _id=None
+            self, role_name: str, default_permissions: List[object], _id=None
     ) -> None:
         """AI is creating summary for __init__
 

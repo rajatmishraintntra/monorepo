@@ -1,6 +1,6 @@
 # pylint: disable=too-few-public-methods
-from typing import List
 from abc import ABC
+from typing import List
 
 
 class AbstractPermissions(ABC):
@@ -16,11 +16,11 @@ class AbstractPermissions(ABC):
     permissions: List[bool]
 
     def __init__(
-        self,
-        permission_name: str,
-        permission_view: str,
-        permissions: List[bool],
-        _id=None,
+            self,
+            permission_name: str,
+            permission_view: str,
+            permissions: List[bool],
+            _id=None,
     ) -> None:
         """AI is creating summary for __init__
 

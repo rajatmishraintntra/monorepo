@@ -12,12 +12,12 @@ class UserDTO(AbstractUser):
     password: Password
 
     def __init__(
-        self,
-        email: EmailID,
-        password: Password = None,
-        role: object = None,
-        permissions: List[object] = None,
-        _id: UserID = None,
+            self,
+            email: EmailID,
+            password: Password = None,
+            role: object = None,
+            permissions: List[object] = None,
+            _id: UserID = None,
     ) -> None:
         self._id = _id if not None else 0
         self.email = email
