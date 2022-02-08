@@ -2,7 +2,7 @@ from typing import List
 
 from user_module.business.services.user_service import AbstractUserService
 from user_module.business.utils.generators import *
-from user_module.enterprise.dtos.User import UserDTO
+from user_module.enterprise.dtos.user import UserDTO
 
 
 class UserService(AbstractUserService):
