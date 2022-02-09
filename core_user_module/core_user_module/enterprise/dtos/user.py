@@ -1,4 +1,4 @@
-from core_typing import List
+from typing import List
 
 from core_user_module.business.entities.user import AbstractUser
 from core_user_module.business.value_object.email import EmailID
