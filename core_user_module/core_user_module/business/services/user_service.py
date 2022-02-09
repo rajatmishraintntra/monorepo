@@ -1,7 +1,7 @@
 import abc
 from typing import List
 
-from user_module.common.constants import DependenciesConstant as DC
+from core_user_module.common.constants import DependenciesConstant as DC
 
 
 class AbstractUserService(abc.ABC):

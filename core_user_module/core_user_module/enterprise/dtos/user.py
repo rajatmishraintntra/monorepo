@@ -1,9 +1,9 @@
-from typing import List
+from core_typing import List
 
-from user_module.business.entities.user import AbstractUser
-from user_module.business.value_object.email import EmailID
-from user_module.business.value_object.password import Password
-from user_module.business.value_object.userid import UserID
+from core_user_module.business.entities.user import AbstractUser
+from core_user_module.business.value_object.email import EmailID
+from core_user_module.business.value_object.password import Password
+from core_user_module.business.value_object.userid import UserID
 
 
 class UserDTO(AbstractUser):

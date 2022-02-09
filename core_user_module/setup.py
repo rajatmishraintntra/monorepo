@@ -6,7 +6,7 @@ with open("README.md", "r") as readme_file:
     long_description = readme_file.read()
 
 setuptools.setup(
-    name="user_module",
+    name="core_user_module",
     version="0.0.2",
     author="Tntra",
     author_email="tntra@tntra.io",

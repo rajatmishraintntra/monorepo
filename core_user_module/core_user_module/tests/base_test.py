@@ -1,7 +1,7 @@
 import unittest
 
 from modules.common_utilities.di import obj_graph
-from user_module.enterprise.services.user_service import UserService
+from core_user_module.enterprise.services.user_service import UserService
 
 
 class TestResponseTypes(unittest.TestCase):

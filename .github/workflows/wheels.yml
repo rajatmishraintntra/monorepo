@@ -20,7 +20,7 @@ jobs:
         run: pip install wheel
 
       - name: Build wheels
-        run: cd user_module && python setup.py bdist_wheel
+        run: cd core_user_module && python setup.py bdist_wheel
         # to supply options, put them in 'env', like:
         # env:
         #   CIBW_SOME_OPTION: value

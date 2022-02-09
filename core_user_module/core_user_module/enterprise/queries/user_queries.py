@@ -1,6 +1,6 @@
 from pypika import Table, PostgreSQLQuery
-from user_module.business.utils.generators import generate_password_hash
-from user_module.common.constants import DependenciesConstant as DC
+from core_user_module.business.utils.generators import generate_password_hash
+from core_user_module.common.constants import DependenciesConstant as DC
 
 
 class UserQueries:

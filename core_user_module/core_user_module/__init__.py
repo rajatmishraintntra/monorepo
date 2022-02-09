@@ -1,7 +1,7 @@
-from user_module.business.utils.custom import CustomDict
-from user_module.common.constants import DependenciesConstant as DC
-from user_module.enterprise.queries.user_queries import UserQueries
-from user_module.enterprise.validator.unique_validators import UniqueValidator
+from core_user_module.business.utils.custom import CustomDict
+from core_user_module.common.constants import DependenciesConstant as DC
+from core_user_module.enterprise.queries.user_queries import UserQueries
+from core_user_module.enterprise.validator.unique_validators import UniqueValidator
 
 
 class UserDependencies:
